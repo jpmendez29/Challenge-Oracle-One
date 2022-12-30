@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/reset.css">
+        <link rel="stylesheet" href="Style/index_style.css">
+        <script defer src="index.js"></script>
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <img src="images/logo.png" alt="logo">                
+            </div>
+        </header>
+
+        <main>
+
+            <section class = "caja-encriptar">
+                <textarea name="input" id="input" cols="30" rows="10" wrap="soft" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="advertencia"> <img src="images/Vector.png" alt="!"> Solo letras minusculas y sin acento </p>
+                <button class="button-encriptar" type="button" onclick="GetInput(0)">Encriptar</button>
+                <button class="button-desencriptar" type="button" onclick="GetInput(1)">Desencriptar</button> 
+            </section>
+
+            <section class="caja-resultado">
+                <textarea name="output" id="output" cols="30" rows="10" wrap="soft" readonly> Ningún mensaje fue encontrado </textarea>
+                <button type="button" onclick="Copy()">Copiar</button>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <p class="coppy"> &copy Copyright Juan Pablo Méndez </p>   
+            <ul class="wrapper">
+                <li class="icon linkedin">
+                    <span class="tooltip">Linkedin</span>
+                    <span><a href="https://www.linkedin.com/in/jpmendez29/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-logo.png" alt="linkedin" width="20" height="20"></a></span>
+                </li>
+                <li class="icon outlook">
+                    <span class="tooltip">Email</span>
+                    <span><a onclick= "email()"><img src="images/outlook.png" alt="Outlook" width="20" height="20"></a></button> </span>
+                </li>
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span><a href="https://github.com/jpmendez29" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" alt="github" width="20" height="20"></a></span>
+                </li>
+            </ul>
+
+        </footer>
+
+
+    </body>
+</html>

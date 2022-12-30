@@ -1,0 +1,339 @@
+header {
+    background-color: #F3F5FC;
+    padding: 1em 0;
+}
+
+.caja{
+    position: relative;
+    margin-left: 50px;
+    width: 940px;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 920px;
+    background: #F3F5FC;        
+}
+
+/* ****************** Input textarea desing ****************** */
+
+.caja-encriptar{
+    position: relative;
+    width: 56%;
+    height: 70%;
+    margin: 70px;
+    float: left;
+
+}
+
+.caja-encriptar textarea{
+    margin: 25px auto;
+    margin-bottom: 300px;
+
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 22%;
+    
+    resize: none;
+    outline: none;
+
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid lightgrey;
+    box-shadow: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    
+    color: #0A3871;
+
+    transition: border-color 0.2s;
+}
+
+.caja-encriptar textarea:focus::placeholder {
+    color: transparent;
+    position: absolute;
+    top: 0;
+    display: block;
+    transition:  0.2s;
+    font-size: 10px;
+    box-shadow: none;
+}
+
+.caja-encriptar textarea:focus {
+    border-width: 3px;
+    border-image: linear-gradient(to right,  #0f5ab4,#F3F5FC);
+    border-image-slice: 1;
+    word-wrap: break-word;
+    height: 150px;
+    box-shadow: none;
+}
+
+.caja-encriptar textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.advertencia{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+
+    margin-bottom: 5px;
+    margin-left: 15px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+}
+
+.button-encriptar{
+    background-color: #0A3871; 
+    color: white;
+}
+
+.button-desencriptar{
+    background-color: transparent; 
+    color: #0A3871;
+}
+
+.button-encriptar, .button-desencriptar{
+    cursor: pointer;
+    box-sizing: content-box;
+    padding: 10px;
+
+    position: relative;
+    width: 320px;
+    height: 20px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+/* ****************** Output textarea desing ****************** */
+
+
+.caja-resultado{
+    margin: 40px 40px 40px auto;
+    position: relative;
+    float: right;
+    
+    width: 400px;
+    height: 70%;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+.caja-resultado textarea{
+    margin: 25px auto;
+    display: block;
+
+    position: relative;
+    width: 80%;
+    height: 73%;
+    
+    resize: none;
+    outline: none;
+
+    background-color: transparent !important;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+
+    color: #343A40;
+
+    transition: border-color 0.2s;
+
+    background-image: url(../images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+
+}
+
+.caja-resultado textarea:focus{
+    box-shadow: none;
+}
+
+
+.caja-resultado button{
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    
+    box-sizing: content-box;
+    background-color: transparent;
+
+    align-items: center;
+    padding: 10px;
+
+    position: relative;
+    width: 80%;
+    height: 20px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    
+    color: #0a3871;
+
+    
+}
+
+/* ****************** Button hover ****************** */
+
+.button-encriptar:hover,.button-desencriptar:hover, .caja-resultado button:hover {
+	transition: all 500ms;
+}
+
+.button-encriptar:hover,.button-desencriptar:hover, .caja-resultado button:hover {
+    box-shadow: 0px 24px 32px -8px #0a3871;
+}
+
+.button-encriptar:hover,.button-desencriptar:hover, .caja-resultado button:focus {
+	outline: none;
+}
+
+/* ****************** Footer ****************** */
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #F3F5FC;
+}
+
+.coppy {
+    color: black;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0e76a8;
+    color: #ffffff;
+}
+
+.wrapper .outlook:hover,
+.wrapper .outlook:hover .tooltip,
+.wrapper .outlook:hover .tooltip::before {
+    background: #0072C6;
+    color: #ffffff;
+}
+
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #757171;
+    color: #ffffff;
+}

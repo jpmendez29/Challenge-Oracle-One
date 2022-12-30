@@ -175,8 +175,8 @@ main{
 
     transition: border-color 0.2s;
 
-    background-image: url(./images/Muñeco.png);
-    
+    background-image: url(./images/Fondo.png);
+
     background-repeat: no-repeat;
     background-position-y: 60%;
 
